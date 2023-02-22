@@ -1,7 +1,7 @@
 #библиотеки, которые загружаем из вне
 import telebot
 import random
-TOKEN = '5481154354:AAGWssrMQCcn04LOvYWvNYZLgYQnr-m_DvY'
+TOKEN = 'тут токен '
 
 from telebot import types
 from random import choice
@@ -35,7 +35,6 @@ def welcome(message):
 	bot.send_message(message.chat.id, "Приветствую Вас в моем ботике 😇, {0.first_name}!".format(message.from_user, bot.get_me()),
 		parse_mode='html', reply_markup=markup)
 
-# fruit = ['яблоко', 'банан', 'груша', 'персик']
 
 
 #назначаем действие для клавиатуры
